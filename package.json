@@ -1,0 +1,51 @@
+{
+  "name": "socket.io-extensor",
+  "version": "0.0.1",
+  "description": "Add some cool features to socket.io",
+  "types": "dist/index.d.ts",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx",
+    "build": "rimraf ./dist/* && tsc",
+    "build:client": "echo \"TODO: pack with webpack\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gx-project/socket.io-extensor.git"
+  },
+  "keywords": [
+    "socket.io",
+    "parser",
+    "packet-compression",
+    "binary",
+    "single-connection"
+  ],
+  "author": "ferco0",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gx-project/socket.io-extensor/issues"
+  },
+  "homepage": "https://github.com/gx-project/socket.io-extensor#readme",
+  "peerDependencies": {
+    "socket.io": "^3.0.4",
+    "socket.io-client": "^3.0.4"
+  },
+  "dependencies": {
+    "debug": "^4.3.1",
+    "eventemitter3": "^4.0.7",
+    "protobufjs": "^6.10.2",
+    "schemapack": "^1.4.2"
+  },
+  "devDependencies": {
+    "@types/debug": "^4.1.5",
+    "@types/node": "^14.14.13",
+    "@typescript-eslint/eslint-plugin": "^4.9.1",
+    "@typescript-eslint/parser": "^4.9.1",
+    "eslint": "^7.15.0",
+    "rimraf": "^3.0.2",
+    "tsc": "^1.20150623.0",
+    "tslib": "^2.0.3",
+    "typescript": "^4.1.3"
+  }
+}
